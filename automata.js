@@ -151,19 +151,29 @@ grafico.pintar(listaCirculos, listaLineas, listaTexto, canvas);
 
 
 var tiempo = 0;
+
+
 setInterval(() => {
-  var color = ""
-  if(tiempo %2 == 0){
-    color = "#00A"
-  }else{
-    color = "#0A0"
-  }
-  listaCirculos[0].setOptions({
-    fill: color
-  })
- tiempo++
-  canvas.clear();
+  canvas.clear()
   grafico.pintar(listaCirculos, listaLineas, listaTexto, canvas)
+
+  var listaAuxiliar = listaCirculos
+  var color = ""
+  if(tiempo == 0){
+    listaAuxiliar[tiempo].setOptions({
+      fill: "#0A0"
+    })
+  }else if(tiempo == 1){
+    listaAuxiliar[2].setOptions({
+      fill: "#0A0"
+    })
+  }else if(tiempo == 2) {
+    listaAuxiliar[4].setOptions({
+      fill: "#0A0"
+    })
+  }
+  grafico.pintar(listaAuxiliar, listaLineas, listaTexto, canvas)
+ tiempo++
 }, 2000);
 
 
