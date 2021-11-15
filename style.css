@@ -1,5 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #c{
-    background-color: blue;
-width: 400%;
-height: 100%;
+    border: 1px solid aqua;
+    width: 400%;
+    height: 100%;
 }
