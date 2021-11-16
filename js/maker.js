@@ -41,4 +41,8 @@ export class Maker {
       evented: false,
     });
   }
+
+  makeSquare = (text,id) => {
+    return $(`<div class='pl-5 pr-5 pt-3 pb-3 ml-1'id = '${id}' style='border: 2px solid #0ff;'><p style='font-size: 30px; color: chocolate;'>${text}</p></div>`)
+  }
 }

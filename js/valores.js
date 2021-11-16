@@ -23,12 +23,6 @@ export class Grafo{
     ]
   }
 
-  getTriangulos = () => {
-    return [
-      
-    ]
-  }
-
   getLineas = () => {
     return [
       //Linea de Q0 a Q3
